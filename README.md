@@ -1,6 +1,8 @@
 To test or use it open your terminal / cmd and follow
-  ```npm install```
-   ```npm start```
+
+  ## npm install ##
+  
+   # npm start #
 
 Login Credentials:
     for general admin :
