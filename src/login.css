@@ -1,0 +1,81 @@
+.plogin {
+    background: #1e4557;
+    height: 100vh;
+}
+
+.page {
+    margin-top: 25px;
+}
+
+.form-container {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+    border: 1px solid rgb(145, 145, 145);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.plogin form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inbox {
+    margin-bottom: 10px;
+}
+
+.forgot {
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.form-button {
+    width: 150px;
+    font-size: 15px;
+    align-items: end;
+    margin: 0 auto;
+    background-color: #0066ff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.137);
+}
+
+.plogin .form-logo {
+    width: 180px;
+    margin-bottom: -20px;
+}
+
+.card-form {
+    text-align: center;;
+    margin: 0px 100px;
+  }
+
+  .cinput {
+    margin-bottom: 10px;
+  }
+
+  .card-form label {
+    padding: 3px 8px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: white;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }

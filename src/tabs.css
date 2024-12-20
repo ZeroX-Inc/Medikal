@@ -1,0 +1,147 @@
+.tab-page {
+  overflow-x: hidden;
+  background: rgb(248, 241, 255);
+  flex: 1;
+  min-height: 100vh;
+}
+
+.admin-page .tab-container {
+  /* margin: 20px auto; */
+  max-width: fit-content;
+  font-family: 'Arial', sans-serif;
+  flex: auto;
+  display: flex;
+  /* border: 1px solid black; */
+  flex: auto;
+  margin-bottom: 20px;
+  min-height: 70vh;
+}
+
+.admin-page .tabs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* justify-content: center; */
+}
+
+.admin-page .tab {
+  padding: 10px 18px;
+  margin: 10px 5px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-page .tab:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-page .tab.active {
+  background-color: #007bff;
+  color: black;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.719);
+}
+
+.admin-page .tab-content {
+  max-width: 1200px;
+  padding: 20px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-page .content {
+  font-size: 20px;
+  color: #333;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.admin-page .m-tab {
+  display: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-page .m-tab.active {
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.admin-page .m-tab-content {
+  width: fit-content;
+  padding: 20px;
+  /* border: 2px solid #007bff; */
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-page .card-form {
+transition: all .5s ease;
+  text-align: center;;
+  margin: 0px 100px;
+}
+
+.admin-page .cinput {
+  margin-bottom: 10px;
+}
+
+.admin-page .rot {
+  animation: rotate 600ms infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  0% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .tab {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .content {
+    font-size: 18px;
+  }
+}
