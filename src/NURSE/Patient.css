@@ -1,0 +1,103 @@
+
+.patient-space {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align at the top */
+    height: 100vh;
+    background-color: #f4f7f6;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px; /* Set a max width for a cleaner, professional look */
+    box-sizing: border-box;
+    overflow-y: auto; /* Allow vertical scrolling inside the form */
+    max-height: calc(100vh - 100px); /* Adjust form height to leave space for submit button */
+    padding-bottom: 80px; /* Add extra space for the submit button */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  .field-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .field-container > .p-input,
+  .field-container > select,
+  .field-container > textarea {
+    flex: 1 1 30%; /* Ensure the form fields are spaced evenly */
+    min-width: 200px; /* Prevent fields from becoming too narrow */
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    min-height: 100px; /* Ensure textareas are not too large */
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  
+  /* Placeholder Styling */
+  input::placeholder,
+  textarea::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Button Styling */
+  .p-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px; 
+    cursor: pointer;
+    width: 150px; 
+    margin: 5px auto 0; 
+  
+  .p-button:hover {
+    background-color: #004085;
+  }
+  
+  /* Responsive Design for smaller screens , I mean smartphones*/
+  @media (max-width: 768px) {
+    .field-container > .p-input,
+    .field-container > select,
+    .field-container > textarea {
+      flex: 1 1 100%; /* Stack fields on smaller screens */
+    }
+    .p-button {
+      padding: 10px 15px; /* Adjust padding for smaller screens */
+    }
+  }
+}
