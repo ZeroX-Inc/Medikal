@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react';
 import Nav from './nav';
 import './tabs.css';
 import { Form, useNavigate } from 'react-router-dom';
+import Patient from './Patient.js';
 
 function Tab() {
   const [activeTab, setActiveTab] = useState('Tab1');
@@ -10,20 +11,11 @@ function Tab() {
   useEffect(() => {
     switch (activeTab) {
       case 'Tab1':
-        document.title = 'MEDIKU';
+        document.title = 'MEDIKAL';
         break;
       case 'Tab2':
         document.title = 'TAB 2';
         break;
-      case 'Tab3':
-        document.title = 'TAB 3';
-        break;
-      case 'Tab4':
-        document.title = 'TAB 4';
-        break;
-      case 'Tab5':
-        document.title = 'TAB 5';
-          break;
       default:
         document.title = 'Admin';
     }
@@ -43,7 +35,7 @@ function Tab() {
             className={activeTab === 'Tab1' ? 'tab active' : 'tab'}
             onClick={() => setActiveTab('Tab1')}
           >
-            TAB 1
+            Patient
           </button>
           <button
             className={activeTab === 'Tab2' ? 'tab active' : 'tab'}
@@ -54,7 +46,7 @@ function Tab() {
         </div>
 
         <div className="tab-content">
-          {activeTab === 'Tab1' && <div className="content">TAB 1</div>}
+          {activeTab === 'Tab1' && <div className="content"><Patient/></div>}
           {activeTab === 'Tab2' && <div className="content">TAB 2</div>}
         </div>
       </div>
