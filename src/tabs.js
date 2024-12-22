@@ -1,7 +1,8 @@
 import { React, useState, useEffect } from 'react';
 import Nav from './nav';
 import './tabs.css';
-import { Form, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Patient from './Patient.js';
 
 function Tab() {
   const [activeTab, setActiveTab] = useState('Tab1');
@@ -21,12 +22,13 @@ function Tab() {
   }, [activeTab]);
 
   const enter = () => {
-    navigate('/gen')
+    navigate('/patient')
 }
   return (
     <div className="tab-page">
       <Nav/>
       <br/>
+      <button  style={{display: 'none'}} onClick={enter}>Enter</button>
       <br/>
       <div className="tab-container">
         <div className="tabs">
@@ -34,7 +36,7 @@ function Tab() {
             className={activeTab === 'Tab1' ? 'tab active' : 'tab'}
             onClick={() => setActiveTab('Tab1')}
           >
-            TAB 1
+            Patient
           </button>
           <button
             className={activeTab === 'Tab2' ? 'tab active' : 'tab'}
@@ -45,7 +47,7 @@ function Tab() {
         </div>
 
         <div className="tab-content">
-          {activeTab === 'Tab1' && <div className="content">TAB 1</div>}
+          {activeTab === 'Tab1' && <div className="content"><Patient/></div>}
           {activeTab === 'Tab2' && <div className="content">TAB 2</div>}
         </div>
       </div>

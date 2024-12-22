@@ -1,0 +1,90 @@
+[
+    {
+	"name": "Covid-19",
+	"id": "0001",
+	"symptoms": [
+        "Fever",
+        "Cough",
+        "Shortness of breath",
+        "Fatigue",
+        "Muscle or body aches",
+        "Headache",
+        "loss of taste or smell",
+        "Sore throat",
+        "Congestion or runny nose",
+        "Nausea or vomiting",
+        "Diarrhea"
+    ],
+    "appearance": "2-14D",
+    "symptopmcount": 11,
+    "contagious": "by air, touch or droplet",
+    "medication": [
+        {"name":"Remdesivir", "dose": "200mg", "frequency": "1-1-1", "duration": "5-10D", "condition": [
+            "non pregnant adults and children > 40kg",
+            "non smoker or non vaper",
+            "no history of heart disease"
+        ]},
+        {"name":"Dexamethasone", "dose": "6mg", "frequency": "1-1-1", "duration": "10D", "condition": [
+            "non pregnant adults > 60kg",
+            "over 18 years of age",
+            "non smoker or non vaper",
+            "no history of liver or kidney disease",
+            "no history of heart disease"
+        ]},
+        {"name":"Hydroxychloroquine", "dose": "400mg", "frequency": "2-0-2", "duration": "5-10D", "condition": [
+            "non pregnant adults and children > 40kg",
+            "over 12 years of age",
+            "non smoker or non vaper",
+            "no history of liver or kidney disease",
+            "no history of heart disease"
+        ]},
+        {"name":"Azithromycin", "dose": "500mg", "frequency": "2-0-0", "duration": "5-10D", "condition": [
+            "no history of liver or kidney disease",
+            "no history of heart disease"
+        ]},
+        {"name":"Ivermectin", "dose": "200mcg", "frequency": "1-1-1", "duration": "5-10D", "condition": [
+            "non pregnant adults and children > 40kg"
+        ]},
+        {"name":"Favipiravir", "dose": "200mg", "frequency": "1-1-1", "duration": "5-10D", "condition": [
+            "null: no specific condition"
+        ]}
+    ]
+    },
+    {
+        "name": "cold",
+        "id": "0002",
+        "symptoms": [
+            "Sneezing",
+            "Stuffy or runny nose",
+            "Sore throat",
+            "Coughing",
+            "Watery eyes",
+            "Mild headache",
+            "Mild body aches",
+            "Mild fatigue"
+        ],
+        "appearance": "1-3D",
+        "contagious":"not contagious",
+        "symptopmcount": 8,
+        "medication": [
+            {"name":"Acetaminophen", "dose": "500mg", "frequency": "1-1-1", "duration": "3-5D", "condition": [
+                "null: no specific condition"
+            ]},
+            {"name":"Ibuprofen", "dose": "200mg", "frequency": "1-1-1", "duration": "3-5D", "condition": [
+                "null: no specific condition"
+            ]},
+            {"name":"Aspirin", "dose": "500mg", "frequency": "1-1-1", "duration": "3-5D", "condition": [
+                "null: no specific condition"
+            ]},
+            {"name":"Paracetamol", "dose": "60mg", "frequency": "1-1-1", "duration": "3-5D", "condition": [
+                "null: no specific condition"
+            ]},
+            {"name":"Dextromethorphan", "dose": "10mg", "frequency": "1-1-1", "duration": "3-5D", "condition": [
+                "null: no specific condition"
+            ]},
+            {"name":"Guaifenesin", "dose": "200mg", "frequency": "1-1-1", "duration": "3-5D", "condition": [
+                "null: no specific condition"
+            ]}
+        ]
+    }
+]

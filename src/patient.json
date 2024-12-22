@@ -1,0 +1,57 @@
+[
+    {
+        "name": "john doe",
+        "age": 25,
+        "patientID": "123456",
+        "birthday": "13-01-2000",
+        "gender": "male",
+        "phone": "1234567890",
+        "address": "kigali, Gasabo",
+        "bloodGroup": "O+",
+        "weight": "70kg",
+        "height": "1.75m",
+        "allergies": "none",
+        "medications": "none",
+        "diseases": "none",
+        "emergencyContact": {
+            "name": "jane doe",
+            "phone": "0987654321",
+            "relation": "sister"
+        },
+        "insurance": {
+            "company": "Rwanda Social Security Board",
+            "policyNumber": "123456",
+            "validity": "13-01-2025"
+        },
+        "appointments": [
+            {
+                "date": "13-01-2021",
+                "time": "10:00",
+                "doctor": "Dr. Jane Doe",
+                "reason": "checkup"
+            },
+            {
+                "date": "13-02-2021",
+                "time": "11:00",
+                "doctor": "Dr. John Doe",
+                "reason": "follow-up"
+            }
+        ],
+        "previousVisits": [
+            {
+                "date": "13-01-2020",
+                "doctor": "Dr. Jane Doe",
+                "reason": "checkup",
+                "diagnosis": "prostate cancer stage 5",
+                "prescription": "chemotherapy"
+            },
+            {
+                "date": "13-02-2020",
+                "doctor": "Dr. John Doe",
+                "reason": "follow-up",
+                "diagnosis": "healthy",
+                "prescription": "none"
+            }
+        ]
+    }
+]
