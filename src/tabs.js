@@ -52,8 +52,8 @@ function Tab() {
             Appointments
           </button>
           <button
-            className={activeTab === 'Tab3' ? 'tab active' : 'tab'}
-            onClick={() => setActiveTab('Tab3')}
+            className={activeTab === 'Tab4' ? 'tab active' : 'tab'}
+            onClick={() => setActiveTab('Tab4')}
           >
             Track Record
           </button>

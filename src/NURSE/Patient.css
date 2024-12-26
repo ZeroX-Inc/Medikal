@@ -1,0 +1,73 @@
+* {
+  overflow-y: scroll;
+
+}
+.patient-space input{
+  width: 30%;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.patient-space button{
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.patient-space button:hover{
+  background-color: #0056b3;
+}
+
+.patient-space textarea{
+  width: 30%;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.patient-space select{
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.p-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.p-list button {
+  width: 250px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+
+.p-list button:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
