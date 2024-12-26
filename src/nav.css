@@ -80,13 +80,11 @@ a {
 
 .admin-page .navbar a {
     text-decoration: none;
-    /* color: rgb(255, 255, 255); */
     color: #ffffff;
     transition: .5s ease-out;
 }
 
 .admin-page .navbar.scrolled {
-    /* display: none; */
     width: 0%;
     background: #0066ff2d;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0);

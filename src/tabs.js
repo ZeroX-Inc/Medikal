@@ -3,6 +3,7 @@ import Nav from './nav';
 import './tabs.css';
 import { useNavigate } from 'react-router-dom';
 import Patient from './Patient.js';
+import Patient_list from './p_list.js';
 
 function Tab() {
   const [activeTab, setActiveTab] = useState('Tab1');
@@ -42,16 +43,28 @@ function Tab() {
             className={activeTab === 'Tab2' ? 'tab active' : 'tab'}
             onClick={() => setActiveTab('Tab2')}
           >
-            TAB 2
+            Records
+          </button>
+          <button
+            className={activeTab === 'Tab3' ? 'tab active' : 'tab'}
+            onClick={() => setActiveTab('Tab3')}
+          >
+            Appointments
+          </button>
+          <button
+            className={activeTab === 'Tab3' ? 'tab active' : 'tab'}
+            onClick={() => setActiveTab('Tab3')}
+          >
+            Track Record
           </button>
         </div>
 
         <div className="tab-content">
-          {activeTab === 'Tab1' && <div className="content"><Patient/></div>}
+          {activeTab === 'Tab1' && <div className="content"><Patient_list/></div>}
           {activeTab === 'Tab2' && <div className="content">TAB 2</div>}
         </div>
       </div>
-      <footer>Empowered by ZeroX © All Rights Reserved.</footer>
+      {/* <footer>Empowered by ZeroX © All Rights Reserved.</footer> */}
     </div>
   );
 }

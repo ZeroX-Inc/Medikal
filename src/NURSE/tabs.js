@@ -41,16 +41,16 @@ function Tab() {
             className={activeTab === 'Tab2' ? 'tab active' : 'tab'}
             onClick={() => setActiveTab('Tab2')}
           >
-            TAB 2
+            Record
           </button>
         </div>
 
         <div className="tab-content">
           {activeTab === 'Tab1' && <div className="content"><Patient/></div>}
-          {activeTab === 'Tab2' && <div className="content">TAB 2</div>}
+          {activeTab === 'Tab2' && <div className="content">Record</div>}
         </div>
       </div>
-      <footer>Empowered by ZeroX © All Rights Reserved 2025.</footer>
+      {/* <footer>Empowered by ZeroX © All Rights Reserved 2025.</footer> */}
     </div>
   );
 }
