@@ -1,6 +1,6 @@
 To test or use it open your terminal / cmd and follow
   
-    npm install
+    nnpmpm install
     npm start
   
 Login Credentials:
